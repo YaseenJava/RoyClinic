@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>BMR </title>
+</head>
+<body>
+<center>
+<h1>BMR Calculator</h1>
+    <form action="/calculateBMR" method="post">
+        <center>Height (in centimeters): <input type="text" name="height"/><br/>
+        Weight (in kilograms): <input type="text" name="weight"/><br/>
+        Gender               :<input type="radio" name="gender" value="Male">Male<br>
+                              <input type="radio" name="gender" value="Female">Male<br>
+        <select name="work">
+        <option value="Desktop">Desktop</option>
+        <option value="light activity">Light activity</option>
+        <option value="4-5 workout">4-5workout</option>
+        <option value="6-7 workout">6-7workout</option>
+        <option value="Athlete">Athlete</option>
+        </select>
+        <button type="submit">Calculate BMR</button>
+    </form>
+</center>
+</body>
+</html>

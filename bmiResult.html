@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>BMI Result</title>
+</head>
+<body>
+
+<div th:if="${bmiForm.bmi!=null}">
+<h2>Your BMI:<span th:text="${bmiForm.bmi}"></span></h2>
+<h2>Result:<span th:text="${bmiForm.result}"></span></h2>
+</div>
+</body>
+</html>

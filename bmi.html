@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>BMRForm</title>
+</head>
+<body>
+ <h1>BMI Calculator</h1>
+    <form action="/calculate" method="post">
+        Height (in centimeters): <input type="text" name="height"/><br/>
+        Weight (in kilograms): <input type="text" name="weight"/><br/>
+        <button type="submit">Calculate BMI</button>
+    </form>
+
+</body>
+</html>
