@@ -56,28 +56,28 @@ public class BMIController {
         String genderX="Female";
         String genderY="male";
     	double clBMR = 0;
-    	if(gender.isequal(genderY)) {
+    	if(gender.equalsIgnoreCase(genderY)) {
     		clBMR=10*wieght+6.25*height-5*age+5;
         System.out.print("BMR for male "+""+clBMR);
     	}
-    	if(gender.isequal(genderX)) {
+    	if(gender.equalsIgnoreCase(genderX)) {
     		clBMR=10*wieght+6.25*height-5*age+161;
         System.out.print("BMR for Female "+""+clBMR);
     	}
     
-        if(work.isequal("Desktop")){
+        if(work.equalsIgnoreCase("Desktop")){
         clBMR=clBMR+1.2;
         }
-       else if(work.isequal("Light activity")){
+       else if(work.equalsIgnoreCase("Light activity")){
         clBMR=clBMR+1.37;
         }
-       else if(work.isequal("6-7workout")){
+       else if(work.equalsIgnoreCase("6-7workout")){
         clBMR=clBMR+1.55;
         }
-       else if(work.isequal("Desktop")){
+       else if(work.equalsIgnoreCase("Desktop")){
         clBMR=clBMR+1.72;
         }
-       else if(work.isequal("Athlete")){
+       else if(work.equalsIgnoreCase("Athlete")){
         clBMR=clBMR+1.90;
         }
 
